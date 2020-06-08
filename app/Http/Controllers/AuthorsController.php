@@ -14,7 +14,7 @@ class AuthorsController extends Controller
   public function index()
   {
     $authors = authors::all();
-    return view('authorsList', ['authors'=> $authors]);
+    return view('authorList', ['authors'=> $authors]);
   }
 
   /**
