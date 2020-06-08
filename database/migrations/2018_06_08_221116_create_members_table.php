@@ -26,6 +26,7 @@ class CreateMembersTable extends Migration
           $table->string('password', 100)->nullable(false);
           $table->string('regNo', 20)->default('null')->nullable();
           $table->string('picLink', 200)->default('null')->nullable();
+          $table->timestamps();
         });
     }
 

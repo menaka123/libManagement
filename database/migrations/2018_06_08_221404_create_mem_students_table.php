@@ -19,6 +19,7 @@ class CreateMemStudentsTable extends Migration
             $table->foreign('memId')->references('memId')->on('members');
             $table->string('regNo', 20)->nullable(false);
             $table->unsignedInteger('batch')->nullable(false);
+            $table->timestamps();
         });
     }
 

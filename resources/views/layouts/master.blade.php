@@ -69,6 +69,26 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="#authorSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-pencil"></i>
+                            Authors
+                        </a>
+                        <ul class="collapse list-unstyled" id="authorSubmenu">
+                            <li>
+                              <a href="addAuthors">
+                                <i class="glyphicon glyphicon-plus"></i>
+                                Add New Author
+                              </a>
+                            </li>
+                            <li>
+                              <a href="authorsList">
+                                <i class="glyphicon glyphicon-list"></i>
+                                Author List
+                              </a>
+                            </li>
+                        </ul>
+                    </li>
                   <li >
                         <a href="#issueBookSubmenu" data-toggle="collapse" aria-expanded="false">
                             <i class="glyphicon glyphicon-share"></i>

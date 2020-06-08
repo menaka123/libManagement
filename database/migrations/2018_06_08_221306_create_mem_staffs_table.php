@@ -18,6 +18,7 @@ class CreateMemStaffsTable extends Migration
           $table->primary('memId');
           $table->foreign('memId')->references('memId')->on('members');
           $table->string('designation', 100);
+          $table->timestamps();
         });
     }
 

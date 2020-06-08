@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\authors;
 use Illuminate\Http\Request;
 
 class AuthorsController extends Controller
@@ -13,7 +13,8 @@ class AuthorsController extends Controller
    */
   public function index()
   {
-      //
+    $authors = authors::all();
+    return view('authorsList', ['authors'=> $authors]);
   }
 
   /**
@@ -23,7 +24,7 @@ class AuthorsController extends Controller
    */
   public function create()
   {
-      return view('addCategory');
+      return view('addAuthor');
   }
 
   /**
@@ -34,11 +35,12 @@ class AuthorsController extends Controller
    */
   public function store(Request $request)
   {
-      $cat = new booksCategory;
+      $cat = new authors;
 
-      $cat->catName = $request->catName;
+      $cat->name = $request->name;
 
       $cat->save();
+      return redirect('/home');
   }
 
   /**

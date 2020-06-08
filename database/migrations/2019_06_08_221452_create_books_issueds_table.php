@@ -21,6 +21,7 @@ class CreateBooksIssuedsTable extends Migration
             $table->unsignedInteger('memId')->nullable(false);
             $table->foreign('bookId')->references('bookId')->on('books');
             $table->foreign('memId')->references('memId')->on('members');
+            $table->timestamps();
         });
     }
 

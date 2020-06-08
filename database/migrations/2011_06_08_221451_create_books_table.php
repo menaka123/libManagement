@@ -24,6 +24,7 @@ class CreateBooksTable extends Migration
             $table->foreign('authId')->references('authId')->on('authors');
             $table->unsignedInteger('totalAvail')->default(0);
             $table->unsignedInteger('totalIss')->default(0);
+            $table->timestamps();
 
         });
     }

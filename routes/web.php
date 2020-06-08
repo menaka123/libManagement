@@ -21,6 +21,9 @@ Route::get('/categoriesList','BooksCategoryController@index');
 Route::get('/addCategories', 'BooksCategoryController@create');
 Route::post('/addCategories', 'BooksCategoryController@store');
 
+Route::get('/authorsList','AuthorsController@index');
+Route::get('/addAuthors', 'AuthorsController@create');
+Route::post('/addAuthors', 'AuthorsController@store');
 
 Route::get('/issuedBooks','BooksIssuedController@index');
 Route::post('/issueBooks', 'BooksIssuedController@store');
